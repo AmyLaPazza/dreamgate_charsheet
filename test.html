@@ -1,0 +1,933 @@
+<div class="attribute">
+  <label class="headings">Attribute</label>
+  
+  <div class="grid-main-threerows">
+      <div class="physisch">
+          <label>Physisch</label>
+          
+          <div class="grid-sub">
+              <button type="roll" name="roll_koerperkraft" value="/roll [[@{koerperkraft} + ?{Attribut|Einfach,0|Doppelt,@{koerperkraft}}]]d10>?{Schwierigkeit|6}f1s">Körperkraft</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_koerperkraft" class="dot" value="1" />
+                  <button type="action" name="act_koerperkraft-1" class="dot">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_koerperkraft-2" class="dot gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_koerperkraft-3" class="dot gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_koerperkraft-4" class="dot gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_koerperkraft-5" class="dot gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_koerperkraft-6" class="dot gt-1 gt-2 gt-3 gt-4 gt-5">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_koerperkraft-7" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_koerperkraft-8" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_koerperkraft-9" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_koerperkraft-10" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_geschick" value="/roll [[@{geschick} + ?{Attribut|Einfach,0|Doppelt,@{geschick}}]]d10>?{Schwierigkeit|6}f1s">Geschick</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_geschick" class="dot" value="1" />
+                  <button type="action" name="act_geschick-1" class="dot">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_geschick-2" class="dot gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_geschick-3" class="dot gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_geschick-4" class="dot gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_geschick-5" class="dot gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_geschick-6" class="dot gt-1 gt-2 gt-3 gt-4 gt-5">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_geschick-7" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_geschick-8" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_geschick-9" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_geschick-10" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_widerstand" value="/roll [[@{widerstand} + ?{Attribut|Einfach,0|Doppelt,@{widerstand}}]]d10>?{Schwierigkeit|6}f1s">Widerstand</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_widerstand" class="dot" value="1" />
+                  <button type="action" name="act_widerstand-1" class="dot">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_widerstand-2" class="dot gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_widerstand-3" class="dot gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_widerstand-4" class="dot gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_widerstand-5" class="dot gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_widerstand-6" class="dot gt-1 gt-2 gt-3 gt-4 gt-5">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_widerstand-7" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_widerstand-8" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_widerstand-9" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_widerstand-10" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+      </div>
+      
+      <div class="sozial">
+          <label>Sozial</label>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_charisma" value="/roll [[@{charisma} + ?{Attribut|Einfach,0|Doppelt,@{charisma}}]]d10>?{Schwierigkeit|6}f1s">Charisma</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_charisma" class="dot" value="1" />
+                  <button type="action" name="act_charisma-1" class="dot">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_charisma-2" class="dot gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_charisma-3" class="dot gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_charisma-4" class="dot gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_charisma-5" class="dot gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_charisma-6" class="dot gt-1 gt-2 gt-3 gt-4 gt-5">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_charisma-7" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_charisma-8" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_charisma-9" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_charisma-10" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_manipulation" value="/roll [[@{manipulation} + ?{Attribut|Einfach,0|Doppelt,@{manipulation}}]]d10>?{Schwierigkeit|6}f1s">Manipulation</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_manipulation" class="dot" value="1" />
+                  <button type="action" name="act_manipulation-1" class="dot">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_manipulation-2" class="dot gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_manipulation-3" class="dot gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_manipulation-4" class="dot gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_manipulation-5" class="dot gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_manipulation-6" class="dot gt-1 gt-2 gt-3 gt-4 gt-5">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_manipulation-7" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_manipulation-8" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_manipulation-9" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_manipulation-10" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_ausstrahlung" value="/roll [[@{ausstrahlung} + ?{Attribut|Einfach,0|Doppelt,@{ausstrahlung}}]]d10>?{Schwierigkeit|6}f1s">Ausstrahlung</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_ausstrahlung" class="dot" value="1" />
+                  <button type="action" name="act_ausstrahlung-1" class="dot">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_ausstrahlung-2" class="dot gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_ausstrahlung-3" class="dot gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_ausstrahlung-4" class="dot gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_ausstrahlung-5" class="dot gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_ausstrahlung-6" class="dot gt-1 gt-2 gt-3 gt-4 gt-5">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_ausstrahlung-7" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_ausstrahlung-8" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_ausstrahlung-9" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_ausstrahlung-10" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+      </div>
+
+      <div class="mental">
+          <label>Mental</label>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_wahrnehmung" value="/roll [[@{wahrnehmung} + ?{Attribut|Einfach,0|Doppelt,@{wahrnehmung}}]]d10>?{Schwierigkeit|6}f1s">Wahrnehmung</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_wahrnehmung" class="dot" value="1" />
+                  <button type="action" name="act_wahrnehmung-1" class="dot">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_wahrnehmung-2" class="dot gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_wahrnehmung-3" class="dot gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_wahrnehmung-4" class="dot gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_wahrnehmung-5" class="dot gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_wahrnehmung-6" class="dot gt-1 gt-2 gt-3 gt-4 gt-5">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_wahrnehmung-7" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_wahrnehmung-8" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_wahrnehmung-9" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_wahrnehmung-10" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_intelligenz" value="/roll [[@{intelligenz} + ?{Attribut|Einfach,0|Doppelt,@{intelligenz}}]]d10>?{Schwierigkeit|6}f1s">Intelligenz</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_intelligenz" class="dot" value="1" />
+                  <button type="action" name="act_intelligenz-1" class="dot">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_intelligenz-2" class="dot gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_intelligenz-3" class="dot gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_intelligenz-4" class="dot gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_intelligenz-5" class="dot gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_intelligenz-6" class="dot gt-1 gt-2 gt-3 gt-4 gt-5">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_intelligenz-7" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_intelligenz-8" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_intelligenz-9" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_intelligenz-10" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_geistesschaerfe" value="/roll [[@{geistesschaerfe} + ?{Attribut|Einfach,0|Doppelt,@{geistesschaerfe}}]]d10>?{Schwierigkeit|6}f1s">Geistesschärfe</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_geistesschaerfe" class="dot" value="1" />
+                  <button type="action" name="act_geistesschaerfe-1" class="dot">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_geistesschaerfe-2" class="dot gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_geistesschaerfe-3" class="dot gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_geistesschaerfe-4" class="dot gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_geistesschaerfe-5" class="dot gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_geistesschaerfe-6" class="dot gt-1 gt-2 gt-3 gt-4 gt-5">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_geistesschaerfe-7" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_geistesschaerfe-8" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_geistesschaerfe-9" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_geistesschaerfe-10" class="dot gt-1 gt-2 gt-3 gt-4 gt-5 gt-6 gt-7 gt-8 gt-9">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="fertigkeiten">
+  <span class="headings">Fertigkeiten</span>
+  <div class="sheet-checkbox-cog">
+      <input type="checkbox" name="attr_optionen-fertigkeiten">
+      <span class="sheet-toggle-icon"></span>
+  </div>
+  <input type="checkbox" name="attr_optionen-fertigkeiten" class="sheet-toggle" hidden>
+
+  <div class="grid-main-threerows toggle-unchecked">
+      <div class="physisch">
+          <label>Physisch</label>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_aufmerksamkeit" value="/roll [[@{aufmerksamkeit} + ?{Attribut|Körperkraft,@{koerperkraft}|Geschick,@{geschick}|Widerstand,@{widerstand}|Charisma,@{charisma}|Manipulation,@{manipulation}|Ausstrahlung,@{ausstrahlung}|Wahrnehmung,@{wahrnehmung}|Intelligenz,@{intelligenz}|Geistesschärfe,@{geistesschaerfe}}]]d10>?{Schwierigkeit|6}f1s">Aufmerksamkeit</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_aufmerksamkeit" class="dot" value="0" />
+                  <button type="action" name="act_aufmerksamkeit-1" class="dot gt-0">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_aufmerksamkeit-2" class="dot gt-0 gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_aufmerksamkeit-3" class="dot gt-0 gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_aufmerksamkeit-4" class="dot gt-0 gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_aufmerksamkeit-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_ausweichen" value="/roll [[@{ausweichen} + ?{Attribut|Körperkraft,@{koerperkraft}|Geschick,@{geschick}|Widerstand,@{widerstand}|Charisma,@{charisma}|Manipulation,@{manipulation}|Ausstrahlung,@{ausstrahlung}|Wahrnehmung,@{wahrnehmung}|Intelligenz,@{intelligenz}|Geistesschärfe,@{geistesschaerfe}}]]d10>?{Schwierigkeit|6}f1s">Ausweichen</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_ausweichen" class="dot" value="0" />
+                  <button type="action" name="act_ausweichen-1" class="dot gt-0">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_ausweichen-2" class="dot gt-0 gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_ausweichen-3" class="dot gt-0 gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_ausweichen-4" class="dot gt-0 gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_ausweichen-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_handgemenge" value="/roll [[@{handgemenge} + ?{Attribut|Körperkraft,@{koerperkraft}|Geschick,@{geschick}|Widerstand,@{widerstand}|Charisma,@{charisma}|Manipulation,@{manipulation}|Ausstrahlung,@{ausstrahlung}|Wahrnehmung,@{wahrnehmung}|Intelligenz,@{intelligenz}|Geistesschärfe,@{geistesschaerfe}}]]d10>?{Schwierigkeit|6}f1s">Handgemenge</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_handgemenge" class="dot" value="0" />
+                  <button type="action" name="act_handgemenge-1" class="dot gt-0">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_handgemenge-2" class="dot gt-0 gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_handgemenge-3" class="dot gt-0 gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_handgemenge-4" class="dot gt-0 gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_handgemenge-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_nahkampf" value="/roll [[@{nahkampf} + ?{Attribut|Körperkraft,@{koerperkraft}|Geschick,@{geschick}|Widerstand,@{widerstand}|Charisma,@{charisma}|Manipulation,@{manipulation}|Ausstrahlung,@{ausstrahlung}|Wahrnehmung,@{wahrnehmung}|Intelligenz,@{intelligenz}|Geistesschärfe,@{geistesschaerfe}}]]d10>?{Schwierigkeit|6}f1s">Nahkampf</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_nahkampf" class="dot" value="0" />
+                  <button type="action" name="act_nahkampf-1" class="dot gt-0">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_nahkampf-2" class="dot gt-0 gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_nahkampf-3" class="dot gt-0 gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_nahkampf-4" class="dot gt-0 gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_nahkampf-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_fernkampf" value="/roll [[@{fernkampf} + ?{Attribut|Körperkraft,@{koerperkraft}|Geschick,@{geschick}|Widerstand,@{widerstand}|Charisma,@{charisma}|Manipulation,@{manipulation}|Ausstrahlung,@{ausstrahlung}|Wahrnehmung,@{wahrnehmung}|Intelligenz,@{intelligenz}|Geistesschärfe,@{geistesschaerfe}}]]d10>?{Schwierigkeit|6}f1s">Fernkampf</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_fernkampf" class="dot" value="0" />
+                  <button type="action" name="act_fernkampf-1" class="dot gt-0">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_fernkampf-2" class="dot gt-0 gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_fernkampf-3" class="dot gt-0 gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_fernkampf-4" class="dot gt-0 gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_fernkampf-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_sportlichkeit" value="/roll [[@{sportlichkeit} + ?{Attribut|Körperkraft,@{koerperkraft}|Geschick,@{geschick}|Widerstand,@{widerstand}|Charisma,@{charisma}|Manipulation,@{manipulation}|Ausstrahlung,@{ausstrahlung}|Wahrnehmung,@{wahrnehmung}|Intelligenz,@{intelligenz}|Geistesschärfe,@{geistesschaerfe}}]]d10>?{Schwierigkeit|6}f1s">Sportlichkeit</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_sportlichkeit" class="dot" value="0" />
+                  <button type="action" name="act_sportlichkeit-1" class="dot gt-0">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_sportlichkeit-2" class="dot gt-0 gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_sportlichkeit-3" class="dot gt-0 gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_sportlichkeit-4" class="dot gt-0 gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_sportlichkeit-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_heimlichkeit" value="/roll [[@{heimlichkeit} + ?{Attribut|Körperkraft,@{koerperkraft}|Geschick,@{geschick}|Widerstand,@{widerstand}|Charisma,@{charisma}|Manipulation,@{manipulation}|Ausstrahlung,@{ausstrahlung}|Wahrnehmung,@{wahrnehmung}|Intelligenz,@{intelligenz}|Geistesschärfe,@{geistesschaerfe}}]]d10>?{Schwierigkeit|6}f1s">Heimlichkeit</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_heimlichkeit" class="dot" value="0" />
+                  <button type="action" name="act_heimlichkeit-1" class="dot gt-0">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_heimlichkeit-2" class="dot gt-0 gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_heimlichkeit-3" class="dot gt-0 gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_heimlichkeit-4" class="dot gt-0 gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_heimlichkeit-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+      </div>
+
+      <div class="sozial">
+          <label>Sozial</label>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_ausdruck" value="/roll [[@{ausdruck} + ?{Attribut|Charisma,@{charisma}|Manipulation,@{manipulation}|Ausstrahlung,@{ausstrahlung}|Körperkraft,@{koerperkraft}|Geschick,@{geschick}|Widerstand,@{widerstand}|Wahrnehmung,@{wahrnehmung}|Intelligenz,@{intelligenz}|Geistesschärfe,@{geistesschaerfe}}]]d10>?{Schwierigkeit|6}f1s">Ausdruck</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_ausdruck" class="dot" value="0" />
+                  <button type="action" name="act_ausdruck-1" class="dot gt-0">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_ausdruck-2" class="dot gt-0 gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_ausdruck-3" class="dot gt-0 gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_ausdruck-4" class="dot gt-0 gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_ausdruck-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_ausfluechte" value="/roll [[@{ausfluechte} + ?{Attribut|Charisma,@{charisma}|Manipulation,@{manipulation}|Ausstrahlung,@{ausstrahlung}|Körperkraft,@{koerperkraft}|Geschick,@{geschick}|Widerstand,@{widerstand}|Wahrnehmung,@{wahrnehmung}|Intelligenz,@{intelligenz}|Geistesschärfe,@{geistesschaerfe}}]]d10>?{Schwierigkeit|6}f1s">Ausflüchte</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_ausfluechte" class="dot" value="0" />
+                  <button type="action" name="act_ausfluechte-1" class="dot gt-0">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_ausfluechte-2" class="dot gt-0 gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_ausfluechte-3" class="dot gt-0 gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_ausfluechte-4" class="dot gt-0 gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_ausfluechte-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_verhandeln" value="/roll [[@{verhandeln} + ?{Attribut|Charisma,@{charisma}|Manipulation,@{manipulation}|Ausstrahlung,@{ausstrahlung}|Körperkraft,@{koerperkraft}|Geschick,@{geschick}|Widerstand,@{widerstand}|Wahrnehmung,@{wahrnehmung}|Intelligenz,@{intelligenz}|Geistesschärfe,@{geistesschaerfe}}]]d10>?{Schwierigkeit|6}f1s">Verhandeln</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_verhandeln" class="dot" value="0" />
+                  <button type="action" name="act_verhandeln-1" class="dot gt-0">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_verhandeln-2" class="dot gt-0 gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_verhandeln-3" class="dot gt-0 gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_verhandeln-4" class="dot gt-0 gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_verhandeln-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_einschuechtern" value="/roll [[@{einschuechtern} + ?{Attribut|Charisma,@{charisma}|Manipulation,@{manipulation}|Ausstrahlung,@{ausstrahlung}|Körperkraft,@{koerperkraft}|Geschick,@{geschick}|Widerstand,@{widerstand}|Wahrnehmung,@{wahrnehmung}|Intelligenz,@{intelligenz}|Geistesschärfe,@{geistesschaerfe}}]]d10>?{Schwierigkeit|6}f1s">Einschüchtern</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_einschuechtern" class="dot" value="0" />
+                  <button type="action" name="act_einschuechtern-1" class="dot gt-0">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_einschuechtern-2" class="dot gt-0 gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_einschuechtern-3" class="dot gt-0 gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_einschuechtern-4" class="dot gt-0 gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_einschuechtern-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_empathie" value="/roll [[@{empathie} + ?{Attribut|Charisma,@{charisma}|Manipulation,@{manipulation}|Ausstrahlung,@{ausstrahlung}|Körperkraft,@{koerperkraft}|Geschick,@{geschick}|Widerstand,@{widerstand}|Wahrnehmung,@{wahrnehmung}|Intelligenz,@{intelligenz}|Geistesschärfe,@{geistesschaerfe}}]]d10>?{Schwierigkeit|6}f1s">Empathie</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_empathie" class="dot" value="0" />
+                  <button type="action" name="act_empathie-1" class="dot gt-0">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_empathie-2" class="dot gt-0 gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_empathie-3" class="dot gt-0 gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_empathie-4" class="dot gt-0 gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_empathie-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_etikette" value="/roll [[@{etikette} + ?{Attribut|Charisma,@{charisma}|Manipulation,@{manipulation}|Ausstrahlung,@{ausstrahlung}|Körperkraft,@{koerperkraft}|Geschick,@{geschick}|Widerstand,@{widerstand}|Wahrnehmung,@{wahrnehmung}|Intelligenz,@{intelligenz}|Geistesschärfe,@{geistesschaerfe}}]]d10>?{Schwierigkeit|6}f1s">Etikette</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_etikette" class="dot" value="0" />
+                  <button type="action" name="act_etikette-1" class="dot gt-0">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_etikette-2" class="dot gt-0 gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_etikette-3" class="dot gt-0 gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_etikette-4" class="dot gt-0 gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_etikette-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_fuehrungsqualitaeten" value="/roll [[@{fuehrungsqualitaeten} + ?{Attribut|Charisma,@{charisma}|Manipulation,@{manipulation}|Ausstrahlung,@{ausstrahlung}|Körperkraft,@{koerperkraft}|Geschick,@{geschick}|Widerstand,@{widerstand}|Wahrnehmung,@{wahrnehmung}|Intelligenz,@{intelligenz}|Geistesschärfe,@{geistesschaerfe}}]]d10>?{Schwierigkeit|6}f1s">Führungsqualitäten</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_fuehrungsqualitaeten" class="dot" value="0" />
+                  <button type="action" name="act_fuehrungsqualitaeten-1" class="dot gt-0">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_fuehrungsqualitaeten-2" class="dot gt-0 gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_fuehrungsqualitaeten-3" class="dot gt-0 gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_fuehrungsqualitaeten-4" class="dot gt-0 gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_fuehrungsqualitaeten-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+      </div>
+
+      <div class="mental">
+          <label>Mental</label>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_wissen" value="/roll [[@{wissen} + ?{Attribut|Wahrnehmung,@{wahrnehmung}|Intelligenz,@{intelligenz}|Geistesschärfe,@{geistesschaerfe}|Charisma,@{charisma}|Manipulation,@{manipulation}|Ausstrahlung,@{ausstrahlung}|Körperkraft,@{koerperkraft}|Geschick,@{geschick}|Widerstand,@{widerstand}}]]d10>?{Schwierigkeit|6}f1s">Wissen</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_wissen" class="dot" value="0" />
+                  <button type="action" name="act_wissen-1" class="dot gt-0">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_wissen-2" class="dot gt-0 gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_wissen-3" class="dot gt-0 gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_wissen-4" class="dot gt-0 gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_wissen-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_szenekenntnis" value="/roll [[@{szenekenntnis} + ?{Attribut|Wahrnehmung,@{wahrnehmung}|Intelligenz,@{intelligenz}|Geistesschärfe,@{geistesschaerfe}|Charisma,@{charisma}|Manipulation,@{manipulation}|Ausstrahlung,@{ausstrahlung}|Körperkraft,@{koerperkraft}|Geschick,@{geschick}|Widerstand,@{widerstand}}]]d10>?{Schwierigkeit|6}f1s">Szenekenntnis</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_szenekenntnis" class="dot" value="0" />
+                  <button type="action" name="act_szenekenntnis-1" class="dot gt-0">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_szenekenntnis-2" class="dot gt-0 gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_szenekenntnis-3" class="dot gt-0 gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_szenekenntnis-4" class="dot gt-0 gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_szenekenntnis-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_nachforschungen" value="/roll [[@{nachforschungen} + ?{Attribut|Wahrnehmung,@{wahrnehmung}|Intelligenz,@{intelligenz}|Geistesschärfe,@{geistesschaerfe}|Charisma,@{charisma}|Manipulation,@{manipulation}|Ausstrahlung,@{ausstrahlung}|Körperkraft,@{koerperkraft}|Geschick,@{geschick}|Widerstand,@{widerstand}}]]d10>?{Schwierigkeit|6}f1s">Nachforschungen</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_nachforschungen" class="dot" value="0" />
+                  <button type="action" name="act_nachforschungen-1" class="dot gt-0">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_nachforschungen-2" class="dot gt-0 gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_nachforschungen-3" class="dot gt-0 gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_nachforschungen-4" class="dot gt-0 gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_nachforschungen-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_handwerk" value="/roll [[@{handwerk} + ?{Attribut|Wahrnehmung,@{wahrnehmung}|Intelligenz,@{intelligenz}|Geistesschärfe,@{geistesschaerfe}|Charisma,@{charisma}|Manipulation,@{manipulation}|Ausstrahlung,@{ausstrahlung}|Körperkraft,@{koerperkraft}|Geschick,@{geschick}|Widerstand,@{widerstand}}]]d10>?{Schwierigkeit|6}f1s">Handwerk</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_handwerk" class="dot" value="0" />
+                  <button type="action" name="act_handwerk-1" class="dot gt-0">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_handwerk-2" class="dot gt-0 gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_handwerk-3" class="dot gt-0 gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_handwerk-4" class="dot gt-0 gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_handwerk-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+
+          <div class="grid-sub">
+              <button type="roll" name="roll_tierkunde" value="/roll [[@{tierkunde} + ?{Attribut|Wahrnehmung,@{wahrnehmung}|Intelligenz,@{intelligenz}|Geistesschärfe,@{geistesschaerfe}|Charisma,@{charisma}|Manipulation,@{manipulation}|Ausstrahlung,@{ausstrahlung}|Körperkraft,@{koerperkraft}|Geschick,@{geschick}|Widerstand,@{widerstand}}]]d10>?{Schwierigkeit|6}f1s">Tierkunde</button>
+              <div class="dots">
+                  <input type="hidden" name="attr_tierkunde" class="dot" value="0" />
+                  <button type="action" name="act_tierkunde-1" class="dot gt-0">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_tierkunde-2" class="dot gt-0 gt-1">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_tierkunde-3" class="dot gt-0 gt-1 gt-2">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_tierkunde-4" class="dot gt-0 gt-1 gt-2 gt-3">
+                      <span class="checked"></span>
+                  </button>
+                  <button type="action" name="act_tierkunde-5" class="dot gt-0 gt-1 gt-2 gt-3 gt-4">
+                      <span class="checked"></span>
+                  </button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="grid-main-threerows toggle-checked">
+      <div class="physisch">
+          <label>Physisch</label>
+
+          <div class="grid-sub">
+              <span>Aufmerksamkeit</span>
+              <button type="action" name="act_aufmerksamkeit-reset">Reset</button>
+          </div>
+
+          <div class="grid-sub">
+              <span>Ausweichen</span>
+              <button type="action" name="act_ausweichen-reset">Reset</button>
+          </div>
+
+          <div class="grid-sub">
+              <span>Handgemenge</span>
+              <button type="action" name="act_handgemenge-reset">Reset</button>
+          </div>
+
+          <div class="grid-sub">
+              <span>Nahkampf</span>
+              <button type="action" name="act_nahkampf-reset">Reset</button>
+          </div>
+
+          <div class="grid-sub">
+              <span>Fernkampf</span>
+              <button type="action" name="act_fernkampf-reset">Reset</button>
+          </div>
+
+          <div class="grid-sub">
+              <span>Sportlichkeit</span>
+              <button type="action" name="act_sportlichkeit-reset">Reset</button>
+          </div>
+
+          <div class="grid-sub">
+              <span>Heimlichkeit</span>
+              <button type="action" name="act_heimlichkeit-reset">Reset</button>
+          </div>
+      </div>
+
+      <div class="sozial">
+          <label>Sozial</label>
+
+          <div class="grid-sub">
+              <span>Ausdruck</span>
+              <button type="action" name="act_ausdruck-reset">Reset</button>
+          </div>
+
+          <div class="grid-sub">
+              <span>Ausflüchte</span>
+              <button type="action" name="act_ausfluechte-reset">Reset</button>
+          </div>
+
+          <div class="grid-sub">
+              <span>Verhandeln</span>
+              <button type="action" name="act_verhandeln-reset">Reset</button>
+          </div>
+
+          <div class="grid-sub">
+              <span>Einschüchtern</span>
+              <button type="action" name="act_einschuechtern-reset">Reset</button>
+          </div>
+
+          <div class="grid-sub">
+              <span>Empathie</span>
+              <button type="action" name="act_empathie-reset">Reset</button>
+          </div>
+
+          <div class="grid-sub">
+              <span">Etikette</span>
+              <button type="action" name="act_etikette-reset">Reset</button>
+          </div>
+
+          <div class="grid-sub">
+              <span>Führungsqualitäten</span>
+              <button type="action" name="act_fuehrungsqualitaeten-reset">Reset</button>
+          </div>
+      </div>
+
+      <div class="mental">
+          <label>Mental</label>
+
+          <div class="grid-sub">
+              <span>Wissen</span>
+              <button type="action" name="act_wissen-reset">Reset</button>
+          </div>
+
+          <div class="grid-sub">
+              <span>Szenekenntnis</span>
+              <button type="action" name="act_szenekenntnis-reset">Reset</button>
+          </div>
+
+          <div class="grid-sub">
+              <span>Nachforschungen</span>
+              <button type="action" name="act_nachforschungen-reset">Reset</button>
+          </div>
+
+          <div class="grid-sub">
+              <span>Handwerk</span>
+              <button type="action" name="act_handwerk-reset">Reset</button>
+          </div>
+
+          <div class="grid-sub">
+              <span>Tierkunde</span>
+              <button type="action" name="act_tierkunde-reset">Reset</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<script type="text/worker">
+  const zehnerValues = ["1","2","3","4","5","6","7","8","9","10"];
+  const fuenferValues = ["1","2","3","4","5"];
+  const fertigkeitenListe = ["aufmerksamkeit", "ausweichen", "handgemenge", "nahkampf", "fernkampf", "sportlichkeit", "heimlichkeit", "ausdruck", "ausfluechte", "verhandeln", "einschuechtern", "empathie", "etikette", "fuehrungsqualitaeten", "wissen", "szenekenntnis", "nachforschungen", "handwerk", "tierkunde"];
+  const attributsListe = ["koerperkraft", "geschick", "widerstand", "charisma", "manipulation", "ausstrahlung", "wahrnehmung", "intelligenz", "geistesschaerfe"];
+
+  fertigkeitenListe.forEach(function(fert) {
+    on(`clicked:reset-${fert}`, function() {
+      setAttrs({
+        fert: 0
+      });
+    });
+
+    fuenferValues.forEach(function(fert) {
+        on(`clicked:` + [fert + value].join(`-`), function() {
+          setAttrs({
+            fert: value
+          });
+        });
+    });
+  });
+  
+  attributsListe.forEach(function(attri) {
+    zehnerValues.forEach(function(value) {
+      on(`clicked:` + [attri + value].join(`-`), function() {
+        setAttrs({
+          attri: value
+        });
+      });
+    });
+  });
+</script>
