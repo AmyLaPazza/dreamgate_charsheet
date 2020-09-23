@@ -128,6 +128,10 @@ Configure the tab buttons*/
   display: none;
 }
 
+.sheet-toggle-hide:checked ~ .sheet-hidden {
+	display: none;
+}
+
 /* Formatierung der Radio Buttons
 
 Configure the button styling. This example makes it look like a radio. */
@@ -183,3 +187,191 @@ input.sheet-dot[value="9"] ~ button.sheet-gt-9 > span.sheet-checked {
   display: none;
 }
 
+/* Importierung von Custom Fonts 
+
+CSS rules to specify families:
+    font-family: 'Grenze Gotisch', cursive;
+
+    font-family: 'Rye', cursive; 
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300;400&family=Rye&display=swap');
+
+label.sheet-headings {
+  font-family: 'Grenze Gotisch', cursive;
+}*/
+
+/* Grundlegendes Layout */
+
+.sheet-dots {
+  display: inline-grid;
+  grid-template-rows: 0fr;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.sheet-grid-main-threerows {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 20px;
+}
+
+.sheet-grid-main-tworows {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 20px;
+}
+
+.sheet-grid-sub {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+/* Tabs im Sheet
+
+Configure the tab buttons*/
+.sheet-container-usual,
+.sheet-container-fight {
+	display: none;
+}
+
+/* show the selected tab */
+.sheet-tabstoggle[value="usual"] ~ div.sheet-container-usual,
+.sheet-tabstoggle[value="fight"] ~ div.sheet-container-fight {
+	display: block;
+}
+
+/* Code zum Tauschen von sichtbaren Gebieten */
+
+/* Aussehen Buttons */
+.sheet-checkbox-cog:hover span {
+  color: black;
+  opacity: 1; }
+
+.sheet-checkbox-cog {
+  display: inline-block;
+  height: 18px;
+  position: absolute;
+  right: 0;
+  width: 18px;
+}
+
+.sheet-checkbox-cog span {
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: black;
+  display: flex;
+  font-family: 'Pictos';
+  font-size: 13px;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  opacity: .25;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.sheet-checkbox-cog input {
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.sheet-checkbox-cog span::before {
+  content: 'y'; 
+}
+
+.sheet-checkbox-cog input:checked ~ span::before {
+  content: '2';
+}
+
+.sheet-checkbox-cog input:checked ~ span {
+  border: none;
+  color: inherit;
+  opacity: .25;
+  top: -2px;
+}
+
+.sheet-checkbox-cog:hover input:checked ~ span {
+  opacity: 1;
+}
+
+/* Umschaltfunktion */
+.sheet-toggle ~ .sheet-toggle-checked {
+  display: none;
+}
+
+.sheet-toggle ~ .sheet-toggle-unchecked {
+  display: grid;
+}
+
+.sheet-toggle:checked ~ .sheet-toggle-checked {
+  display: grid;
+}
+
+.sheet-toggle:checked ~ .sheet-toggle-unchecked {
+  display: none;
+}
+
+.sheet-toggle-hide:checked ~ .sheet-hidden {
+	display: none;
+}
+
+/* Formatierung der Radio Buttons
+
+Configure the button styling. This example makes it look like a radio. */
+button.sheet-dot {
+  padding: 0;
+  border: solid 1px #a8a8a8;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.sheet-dot > span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: buttontext;
+}
+
+/* Hide the "checked" section of the radio if the hidden attribute value is greater than the button value*/ 
+input.sheet-dot[value="0"] ~ button.sheet-gt-0 > span.sheet-checked {
+  display: none;
+}
+
+input.sheet-dot[value="1"] ~ button.sheet-gt-1 > span.sheet-checked {
+  display: none;
+}
+input.sheet-dot[value="2"] ~ button.sheet-gt-2 > span.sheet-checked {
+  display: none;
+}
+input.sheet-dot[value="3"] ~ button.sheet-gt-3 > span.sheet-checked {
+  display: none;
+}
+input.sheet-dot[value="4"] ~ button.sheet-gt-4 > span.sheet-checked {
+  display: none;
+}
+input.sheet-dot[value="5"] ~ button.sheet-gt-5 > span.sheet-checked {
+  display: none;
+}
+input.sheet-dot[value="6"] ~ button.sheet-gt-6 > span.sheet-checked {
+  display: none;
+}
+input.sheet-dot[value="7"] ~ button.sheet-gt-7 > span.sheet-checked {
+  display: none;
+}
+input.sheet-dot[value="8"] ~ button.sheet-gt-8 > span.sheet-checked {
+  display: none;
+}
+input.sheet-dot[value="9"] ~ button.sheet-gt-9 > span.sheet-checked {
+  display: none;
+}
